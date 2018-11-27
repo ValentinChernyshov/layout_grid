@@ -1,0 +1,82 @@
+* {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal; }
+
+.item, .main_center, .main_center .main_center_2, .main_center .main_center_7_container {
+  border-radius: 5px; }
+
+.item, .main_left, .main_right {
+  height: 100px; }
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #fbeecb;
+  display: grid;
+  grid-template-columns: repeat(10, 4.25fr);
+  grid-template-rows: 119px 100px 100px 100px 100px 100px;
+  column-gap: 1.944%;
+  grid-template-areas: "header header header header header header header header header header" "left_sidebar left_sidebar main main main main main main right_sidebar right_sidebar"; }
+
+.header {
+  grid-area: header; }
+  .header h1 {
+    text-align: center;
+    padding: 32px 0;
+    margin: 0;
+    font-size: 3em; }
+
+h2 {
+  font-size: 1.5em;
+  padding: 24px 0 0 0;
+  text-align: center; }
+
+.main_left, .main_right {
+  background-color: #71dad2; }
+
+.main_left {
+  grid-area: left_sidebar; }
+
+.main_right {
+  grid-area: right_sidebar; }
+
+.main_center {
+  background-color: #fae7b3;
+  grid-area: main;
+  grid-row-start: 2;
+  grid-row-end: 7;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  column-gap: 3.304%;
+  grid-template-areas: "center_2 center_2 center_2 center_2 center_2 center_2" "center_4 center_4 center_4 center_5 center_5 center_5" "center_6 center_6 center_7 center_7 center_7 center_7"; }
+  .main_center .main_center_2 {
+    grid-area: center_2; }
+  .main_center .main_center_4 {
+    grid-area: center_4;
+    background-color: #ee9e9c; }
+  .main_center .main_center_5 {
+    grid-area: center_5;
+    background-color: #ee9e9c; }
+  .main_center .main_center_6 {
+    grid-area: center_6;
+    background-color: #f09671; }
+  .main_center .main_center_7_container {
+    grid-area: center_7;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 10.528%;
+    grid-template-areas: "main_center_7 main_center_7 main_center_7 main_center_7" "main_center_8 main_center_8 main_center_9 main_center_9" "main_center_10 main_center_10 main_center_10 main_center_10";
+    background-color: #f6d784; }
+  .main_center .main_center_7 {
+    grid-area: main_center_7; }
+  .main_center .main_center_8 {
+    grid-area: main_center_8;
+    background-color: #ee9e9c; }
+  .main_center .main_center_9 {
+    grid-area: main_center_9;
+    background-color: #ee9e9c; }
+  .main_center .main_center_10 {
+    grid-area: main_center_10;
+    background-color: #ea9fc3; }
